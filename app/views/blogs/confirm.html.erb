@@ -1,0 +1,8 @@
+<h3>In the following content, to create.</h3>
+<%= form_with(model: @blog, local: true) do |form| %>
+  <%= form.hidden_field :title %>
+  <%= form.hidden_field :body %>
+  <p>タイトル:<%= @blog.title %></p>
+  <p>本文:<%= @blog.body %></p>
+  <%= form.submit  "Create" %>
+<% end %>
